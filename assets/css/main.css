@@ -6,6 +6,12 @@ main {
 }
 .slider{
 	grid-column: span 2;
+	margin-bottom: -10px;
+	
+}
+.slider img{
+	width: 100%;
+
 }
 .mainHome h2{
 		font-size: 1.3em;
