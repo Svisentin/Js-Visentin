@@ -1,0 +1,73 @@
+[
+    
+    {
+        "id":  1234  , 
+        "nombre": "Silla",
+        "precioUnitario": 20000,
+        "stock": 32,
+         "cantidad": 0
+    },
+    {
+        "id":   4567 , 
+        "nombre": "Pechera",
+        "precioUnitario": 15000,
+        "stock": 20,
+         "cantidad": 0
+    },
+    {
+        "id":  7890  , 
+        "nombre": "Riñonera",
+        "precioUnitario": 13500,
+        "stock": 30,
+         "cantidad": 0
+    },
+    {
+        "id": 1987   , 
+        "nombre": "Gorra",
+        "precioUnitario": 7000,
+        "stock": 26,
+         "cantidad": 0
+    },
+    {
+        "id": 7654   , 
+        "nombre": "Remera",
+        "precioUnitario": 9000,
+        "stock": 18,
+         "cantidad": 0
+    },
+    {
+        "id":  4321  , 
+        "nombre": "Pantalon",
+        "precioUnitario": 18500,
+        "stock": 52,
+         "cantidad": 0
+    },
+    {
+        "id":  1029  , 
+        "nombre": "Guantes",
+        "precioUnitario": 8000,
+        "stock": 52,
+         "cantidad": 0
+    },
+    {
+        "id":  2938  , 
+        "nombre": "Bastones",
+        "precioUnitario": 14000,
+        "stock": 52,
+         "cantidad": 0
+    },
+    {
+        "id":  3847  , 
+        "nombre": "Cuellos",
+        "precioUnitario": 5000,
+        "stock": 52,
+         "cantidad": 0
+    },
+    {
+        "id":  4756  , 
+        "nombre": "Medias",
+        "precioUnitario": 3500,
+        "stock": 52,
+         "cantidad": 0
+    }
+]

@@ -1,0 +1,83 @@
+main{
+	padding: 60px;
+}
+.mainContacto__divContacto{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid lightgray;
+	
+}
+/* Logo y data */
+.mainContacto__section{
+	margin: 0px;
+	flex-basis: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.mainContacto__divlogo{
+
+	flex-basis: 50%;
+	text-align: center;
+}
+.mainContacto .mainContacto__divContacto{
+	background-image: url(../img/copos.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#logoForm{
+	width:70%;
+	margin: auto;
+	padding: 3em ;
+	text-align: center;
+}
+.mainContacto__divinfo {
+	text-align: left;
+}
+.mainContacto__titulos{
+	margin-bottom: 0px;
+	text-shadow: 1px 1px 2px black;
+	font-size: 1.1em;
+	margin-top: 1em;
+}
+
+/* Form */
+.mainContacto__form{
+	margin: 2em;
+	flex-basis: 50%;
+}
+.mainContacto__datos{
+	display: flex;
+}
+.mainContacto label{
+   font-weight: bold;
+   line-height: 2em;
+   padding: 40px;
+   box-sizing: border-box;
+}
+.mainContacto__boton{
+   float: right;
+   width: 50%;
+   margin-top: 5px;
+   padding: 5px 10px;
+   background: rgb(56, 97, 211);
+   background: linear-gradient(180deg, rgba(56, 97, 211,1) 0%, rgb(97, 128, 212) 100%);
+   color: white;
+   border-radius: 5px;
+  
+}
+.mainContacto__boton:hover{
+	background: rgb(56, 97, 211);
+	background: linear-gradient(0deg, rgba(56, 97, 211,1) 0%, rgb(97, 128, 212) 100%);
+
+}
+
+#floatingTextarea2{
+	width: 100%;
+}
+
+.mainContacto__fieldset{
+	padding: 20px;
+}
+

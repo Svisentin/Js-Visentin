@@ -1,0 +1,135 @@
+main {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: center;
+	align-items: center;
+}
+.slider{
+	grid-column: span 2;
+}
+.mainHome h2{
+		font-size: 1.3em;
+		background: black;
+		color: white;
+		text-align: center;
+		padding: 24px;
+		grid-column: span 2;
+}
+.mainHome .mainHome__h3{
+		text-transform: uppercase;
+		text-shadow: 1px 1px 2px 1px;
+		color: #a52a2a;
+		padding-bottom: 30px;
+}
+
+
+.mainHome__txt {
+color: #3a3939;
+line-height: 2rem;
+letter-spacing: 1PX;
+}
+
+/*--------------------GIRD HOME----------------------*/
+/*---------------------------------------------------*/
+
+.mainHome__silla{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 40px;
+}
+.mainHome__silla p{
+	width: 80%;
+	padding-left: 40px;
+}
+.mainHome__silla h3{
+	padding-left: 40px;
+}
+.mainHome__video{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.mainHome__video video{
+	height:480px;      
+	margin: 20px;  
+}
+
+
+.mainHome__pechera{
+background: #ffd7a2;
+height: 100%;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+justify-content: center;  
+padding: 40px;
+}
+.mainHome__pechera p{
+	text-align: right;
+	width: 90%;
+	padding-right: 40px;
+}
+.mainHome__pechera h3{
+	padding-top: 1em;
+	padding-right: 40px;
+}
+
+
+.mainHome__imgPechera{
+
+background: #ffd7a2;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+width: 100%;
+box-sizing: border-box;
+}
+.mainHome__imgPechera img{
+	width: 100%;
+}
+
+.mainHome__futuros{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 40px;
+}
+.mainHome__h3{
+	padding: 0px 40px;
+}
+.mainHome__futuros p{
+	width: 80%;
+	padding-left: 40px;
+}
+
+
+
+.mainHome__imgFuturos{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+
+}
+.mainHome__imgFuturos img{
+	height: 500px;
+	 display: block;
+}
+
+
+.mainHome_frase{
+padding: 30px;
+font-style: italic;
+font-size: 1.2em;    
+text-align: center;
+line-height: 2em;
+grid-column: span 2;
+}
