@@ -1,0 +1,239 @@
+
+a {
+	text-decoration: none;
+	color: #666666;
+}
+
+/* """""""""""""""""""""""""""""""""""Boton inicio*/
+#inicio {
+	color: #ffffff;
+    background-color: #24990a;
+	bottom: 0;
+	right: 0;
+	padding: 15px;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    margin: 30px;
+    box-shadow: 1px 3px 5px rgba(203, 203, 203, 0.324);
+    border-radius: 50%; 
+	border: none;
+	z-index: 1;
+}
+
+#inicio a{
+	padding: 0;
+}
+#inicio img{
+	width: 100%;
+	object-fit: cover;
+}
+
+
+/* ///////////// MAIN MAIN MAIN MAIN MAIN///////////// */
+
+main{
+	display: grid;
+	grid-template-columns: 18% auto;
+	align-content: baseline;
+}
+
+
+
+
+/* ///////////// RUTAS///////////// */
+#rutas{
+	grid-column: 2;
+	padding: 20px 100px 0px 100px;
+	height: 3em;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+#rutas a{ 
+	text-decoration: none;
+	color: #000000;
+}
+
+
+.deleteFiltros{
+	display: none;
+	font-size: 10px;
+	background-color: rgb(233, 231, 231);
+	border-radius: 5px;
+	padding: 5px;
+	margin-right: 5px;
+}
+.deleteTodos{
+	/* display: none; */
+	font-size: 16px;
+	background-color: rgb(233, 231, 231);
+	border-radius: 5px;
+	padding: 5px;
+	margin-right: 5px;
+}
+
+
+
+/* ///////////// Aside///////////// */
+aside{ 
+	grid-row: 1/3;
+  grid-column:1/1;
+  padding: 15px;
+  
+}
+.list{
+	display: flex;
+	flex-direction: column;
+	padding: 10px 20px;
+}
+.list a {
+	
+	font-size: 14px;
+	margin-bottom: 5px;
+	transition: all 1s ;
+}
+.list a:hover{
+	padding-left: 30px;
+	color: #333333;
+}
+
+/* /////////////Tarjetas de prod///////////// */
+.grid_stock { 
+	grid-row: 2;
+  grid-column: 2;
+  align-content: baseline;
+  display: grid;
+  grid-template-columns:  repeat(auto-fit, minmax(100px, 230px));
+  padding: 20px;
+  grid-gap: 10px;
+  
+}
+.card_stock {
+  padding: 18px;
+  color: #666666;
+  background: #ffffffbf;
+  border-radius: 5px;
+  transition: all 0.3s ;
+  text-align: center;
+}
+.card_stock p {
+	padding-bottom: 5px;
+}
+
+.card_stock:hover {
+	transform: scale(1.05);
+
+	box-shadow: 1px 1px 10px rgba(120, 120, 120, 0.222); 
+	
+}
+.card_stock p:nth-of-type(2) {
+	font-size: 10px;
+}
+.card_stock p:nth-of-type(3) {
+	font-size: 10px;
+}
+
+.card_stock img{
+	width: 150px;
+    height : 150px;
+    border-radius : "5px";
+    display : "block";
+    margin : "auto" ;
+    margin-bottom : "10px";
+    margin-top : "10px";
+    object-fit: cover ;
+}
+
+.card_stock a{
+	padding: 5px 10px;
+	border-radius: 20px;
+	transition: all 0.3s;
+	background-color: rgba(102, 154, 51, 0.233);
+
+	
+}
+.boton-agregar:hover{
+	color: black;
+	background-color: rgba(90, 138, 42, 0.457);
+	cursor: pointer;
+	color: #ffffff;
+	padding: 5px 40px;
+}
+
+.card_stock span{
+	display: none;
+}
+
+.msg-producto {
+	display: inline;
+	position: fixed;
+	padding: 10px 50px;
+	background-color: black;
+	color: #ffffff;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 1;
+  }
+  
+.msg-carrito{
+	margin-top: 100px;
+	text-align: center;
+	padding: 50px ;
+	box-sizing: border-box;
+}
+.msg-carrito p {
+	padding-bottom: 30px ;
+}
+.msg-carrito a {
+	color: #ffffff;
+	background-color: #42680d;
+	border-radius: 5px;
+	font-weight: 600;
+	padding: 10px 24px;
+}
+.msg-carrito a:hover{
+	background-color: #759548;
+	/* background-color: #b71f00; */
+}
+
+.active{
+	background-color: #24990a;
+	color: #ffffff;
+	padding-left: 30px;
+	background-image: linear-gradient(to right,#24990a, #ffffff); /* Cambia los colores según tus necesidades */
+	
+	animation: background-slide 3s linear ;
+
+}
+
+/* Define una animación llamada "background-slide" */
+@keyframes background-slide {
+  0% { background-position: left; }
+  100% { background-position: right; }
+}
+
+.noneProductos{
+	background-color: #ffffff;
+	color: black;
+	border-radius: 10px;
+	
+}
+
+.shopi{
+	
+	background-color: rgba(90, 138, 42, 0.457);
+	padding: 5px 15px;
+	border-radius: 15px;
+	transition: 0.3s all;
+}
+
+.shopi:hover{
+	color: black;
+	background-color: rgba(90, 138, 42, 0.457);
+	cursor: pointer;
+	color: #ffffff;
+	padding: 5px 40px;
+}

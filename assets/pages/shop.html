@@ -6,7 +6,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" type="image/gif" href="../img/isologo.svg">
-		<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="../css/shop.css">
 		<link rel="stylesheet" type="text/css" href="../css/header.css">
 		<link rel="stylesheet" type="text/css" href="../css/footer.css">
 		<!-- conecto fuentes de google poppins -->
@@ -51,47 +51,54 @@
 		</header>
 		<main>
 			<div id="rutas">
-				<div><p> ((( Inicio/Patagonia/ejemplo )))</p></div>
+				<div id="filtrosAplicados">
+					<a href="" class="deleteFiltros borrarFiltroPrecio" >Precio<span class="mdi mdi-filter-remove"></span></a>
+					<a href="" class="deleteFiltros borrarFiltroCategoria" >Categoria<span class="mdi mdi-filter-remove"></span></a>
+					<a href="" class="deleteFiltros borrarFiltroMarca" >Marca<span class="mdi mdi-filter-remove"></span></a>
+					<a href="" class="deleteFiltros borrarFiltroEnvio" >Envio Gratis<span class="mdi mdi-filter-remove"></span></a>
+				</div>
 				<div>
-					<span class="mdi mdi-sort-ascending"></span>
-					<span class="mdi mdi-sort-descending"></span></div>
+					<a id="todos" class="borrarFiltroTodos deleteTodos" href=""><span>Borrar filtros</span></a>
+					<a href="" class="botonAscendente"><span class="mdi mdi-sort-ascending"></span></a>
+					<a href="" class="botonDescendente"><span class="mdi mdi-sort-descending"></span></a>
+				</div>
 			</div>
 			<aside>
 				<h3>Filtrar por precio</h3>
 					<div class="list">
-					<a href="">Hasta $5000</a>
-					<a href="">$5000 a $10000</a>	
-					<a href="">$10000 a $15000</a>
-					<a href="">Más de $15000</a>
+					<a href="" class="botonFiltroPrecio" id="-5">Hasta $5000</a>
+					<a href="" class="botonFiltroPrecio" id="+5">$5000 a $10000</a>	
+					<a href="" class="botonFiltroPrecio" id="+10">$10000 a $15000</a>
+					<a href="" class="botonFiltroPrecio" id="+15">Más de $15000</a>
 					</div>
 				<h3>Filtrar por producto</h3>
 					<div class="list">
-					<a href="">Bastones</a>
-					<a href="">Cuellos</a>
-					<a href="">Gorras</a>
-					<a href="">Guantes</a>
-					<a href="">Medias</a>
-					<a href="">Pantalon</a>
-					<a href="">Pecheras</a>
-					<a href="">Remeras</a>
-					<a href="">Riñonera</a>
-					<a href="">Sillas</a>
+						<a href="" id="Bastones" class="botonFiltroCategoria">Bastones</a>
+						<a href="" id="Cuellos" class="botonFiltroCategoria">Cuellos</a>
+						<a href="" id="Gorras" class="botonFiltroCategoria">Gorras</a>
+						<a href="" id="Guantes" class="botonFiltroCategoria">Guantes</a>
+						<a href="" id="Medias" class="botonFiltroCategoria">Medias</a>
+						<a href="" id="Pantalón" class="botonFiltroCategoria">Pantalón</a>
+						<a href="" id="Pecheras" class="botonFiltroCategoria">Pecheras</a>
+						<a href="" id="Remeras" class="botonFiltroCategoria">Remeras</a>
+						<a href="" id="Riñonera" class="botonFiltroCategoria">Riñonera</a>
+						<a href="" id="Sillas" class="botonFiltroCategoria">Sillas</a>
 					</div>
 				<h3>Filtrar por marca</h3>
 					<div class="list">
-					<a href="">Patagonia</a>
-					<a href="">Libo</a>
-					<a href="">OR</a>
-					<a href="">Next</a>
-					<a href="">Verona</a>
-					<a href="">Vive Outdoors</a>
+					<a href="" class="botonFiltroMarca" id="Patagonia">Patagonia</a>
+					<a href="" class="botonFiltroMarca" id="Libo">Libo</a>
+					<a href="" class="botonFiltroMarca" id="OR">OR</a>
+					<a href="" class="botonFiltroMarca" id="Next">Next</a>
+					<a href="" class="botonFiltroMarca" id="Verona">Verona</a>
+					<a href="" class="botonFiltroMarca" id="ViveOutdoors">Vive Outdoors</a>
 					</div>
 				<h3>Costo de envio</h3>
 					<div class="list">
-					<a href="">Gratis</a>
+					<a href="" id="gratis" class="botonFiltroGratis">Gratis</a>
 					</div>
 			</aside>
-			<span class="msg-producto">El producto se agrego con exito</span>
+			<span class="msg-producto">El producto se agrego con éxito</span>
 				
 		</main>
 		<footer class="container-fluid m-auto footer row justify-content-center p-4 text-center text-md-start">

@@ -117,7 +117,7 @@ header div ul li {
 
 main{
 	display: grid;
-	grid-template-columns: 18% auto;
+	grid-template-columns: 30% auto;
 	align-content: baseline;
 }
 
@@ -157,6 +157,16 @@ aside{
 .list a:hover{
 	padding-left: 30px;
 	color: #333333;
+}
+
+#flyer{
+	width: 100%;
+	height: 600px;
+    border-radius : "5px";
+    display : "block";
+    margin : "auto" ;
+    margin-top : "10px";
+    object-fit: fill ;
 }
 
 /* /////////////MENSAJE DE ELIMINAR PRODUCTO///////////// */
@@ -262,13 +272,18 @@ aside{
 }
 
 .comprado{
-	width: 40%;
-	height: 30%;
-	border: 3px solid #24990a;
+	width: 38%;
+	height: 25%;
+	border: 3px double #24990a;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	font-size: 1.3em;
-
+	font-size: 1.1em;
+	background-color: #ffffff;
+	border-radius: 10px;
 }
 
+.cuenta{
+	font-size: 12px;
+}

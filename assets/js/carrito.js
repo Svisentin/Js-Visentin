@@ -20,7 +20,7 @@ async function obtenerProductos() {
         <p>"¡Pasate por nuestro SHOP a conocer lo mejor para vos!"</p>
         <a href="../pages/shop.html"> Haz click aca, no esperes mas!</a>
     `
-    main.style.gridTemplateColumns = "18% auto"
+    main.style.gridTemplateColumns = "30% auto"
     divContainer_stock.style.gridRow = "1 / span 1"
     divContainer_stock.style.gridTemplateColumns = "1fr"
 
@@ -37,7 +37,7 @@ async function obtenerProductos() {
     
     div_card.innerHTML= `
       <div class="carrito1">
-        <img src="../img/${producto.nombre}.png" alt="${producto.nombre}"> 
+        <img src="../img/productos/${producto.nombre}${producto.id}.png" alt="${producto.nombre}"> 
         <br>
         <a class="boton-eliminar" id="${producto.id}"> Eliminar</a>
       </div>
@@ -57,7 +57,7 @@ async function obtenerProductos() {
     divContainer_stock.appendChild(div_card);
 
     
-    actualizarbotones()
+    actualizarBotones()
     actualizarNumerito()
     
     })
@@ -89,7 +89,7 @@ try {
 
 //////////////////////////PARTE DE BOTONES AGREGAR////////////////////////
 
-function actualizarbotones() {
+function actualizarBotones() {
   let botonesEliminarProd = document.querySelectorAll (".boton-eliminar");
 
   botonesEliminarProd.forEach(boton => {
@@ -148,28 +148,47 @@ function calcularTotal() {
   }, 0);
 }
 
-
 function comprado() {
+  const divContainer = document.createElement("div");
+  divContainer.style.position = "fixed";
+  divContainer.style.top = "0";
+  divContainer.style.left = "0";
+  divContainer.style.width = "100vw";
+  divContainer.style.height = "100vh";
+  divContainer.style.display = "flex";
+  divContainer.style.justifyContent = "center";
+  divContainer.style.alignItems = "center";
+  divContainer.style.background = "rgba(0, 0, 0, 0.7)";
+  divContainer.style.zIndex = "9999";
+
   const msg = document.createElement("div");
   msg.classList.add("comprado");
   msg.style.position = "fixed";
   msg.style.top = "50%";
   msg.style.left = "50%";
   msg.style.transform = "translate(-50%, -50%)";
-  msg.style.backgroundColor = "white";
-  msg.style.padding = "20px";
+  msg.style.padding = "40px";
   msg.style.textAlign = "center";
   msg.style.zIndex = "9999";
-  msg.innerHTML = "¡Muchas gracias por tu compra!<br><br> Te enviaremos al shop por si te olvidaste algo 😊";
+  msg.style.border = "2px double green";
 
-  document.body.appendChild(msg);
-  
+  divContainer.appendChild(msg);
+  document.body.appendChild(divContainer);
 
-  setTimeout(function() {
-    localStorage.clear();
-    window.location.href = "../pages/shop.html";
-  }, 4000);
-  
+  let secondsLeft = 3;
+  updateCountdown();
+
+  function updateCountdown() {
+    msg.innerHTML = `¡Muchas gracias por tu compra!<br><br> Te enviaremos al shop por si te olvidaste algo 😊<br><br><p class =cuenta>Redireccionando en ${secondsLeft} segundos...<p>`;
+    secondsLeft--;
+
+    if (secondsLeft >= 0) {
+      setTimeout(updateCountdown, 1000);
+    } else {
+      localStorage.clear();
+      window.location.href = "../pages/shop.html";
+    }
+  }
 }
 
 function botonCompras() {

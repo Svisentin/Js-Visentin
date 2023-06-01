@@ -3,16 +3,15 @@
     background:rgb(26, 25, 25);
 	width: 100%;
 	display: grid;
-
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	
+	font-size: 12px;
 }
 .footer :first-child{
 	display: flex;
 	align-items: center;
 }
 .footer p {
-	margin-top: 12px;
+	margin-top: 8px;
 
 }
 .footer__div {
@@ -24,7 +23,7 @@
 	
 }
 .footer__iconos img{
-	width: 50px;
+	width: 30px;
 	display: block;
 	margin: 10px;
 	border-radius: 8px;
@@ -41,13 +40,13 @@
 		padding-bottom: 1em;
 }
 .footer__mp{
-        width: 150px;
+        width: 120px;
         background-color: rgba(169, 169, 169, 0.425);
         border-radius: 5px;
         margin-top: 10px;
 }
 .footer__sobre img{ 
-            width: 6em;
+            width: 70px;
             padding: 1px 10px;
             background-color: rgba(169, 169, 169, 0.425);
 }
